@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: calculator
-          image: ghcr.io/tluhk/calculator:latest
+          image: ghcr.io/tluhk/calculator@sha256:0331520913c67d595436a13619b09d8a1f8396af3a95f1377a4fc06ea20b9272
           imagePullPolicy: Always
           ports:
             - containerPort: 3030 # Rakenduse sees töötav port
