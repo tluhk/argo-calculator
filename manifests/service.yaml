@@ -5,9 +5,8 @@ metadata:
 spec:
   selector:
     app: calculator
-  type: NodePort
   ports:
     - protocol: TCP
-      port: 3030 # Service'i port (saab kasutada ClusterIP sees)
-      targetPort: 3030 # Pod'i sees töötav rakenduse port
-      nodePort: 30030 # Väline ligipääs Node'i kaudu (vali vahemikus 30000-32767)
+      port: 80
+      targetPort: 3030
+  type: ClusterIP
